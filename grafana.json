@@ -1,0 +1,67 @@
+{
+    "name": "grafana",
+    "id": "/subscriptions/9e7e6198-d425-4369-9283-14afde79747c/resourceGroups/grafanatestvm1/providers/Microsoft.Compute/virtualMachines/grafana",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "eastus",
+    "properties": {
+        "vmId": "34e9f9d9-9bdd-40e1-8c62-54be85ac1e43",
+        "hardwareProfile": {
+            "vmSize": "Standard_DS2_v2"
+        },
+        "storageProfile": {
+            "imageReference": {
+                "publisher": "Canonical",
+                "offer": "UbuntuServer",
+                "sku": "18.04-LTS",
+                "version": "latest"
+            },
+            "osDisk": {
+                "osType": "Linux",
+                "name": "osdisk",
+                "createOption": "FromImage",
+                "vhd": {
+                    "uri": "https://grafanastoragetestrun.blob.core.windows.net/vhds/concat(parameters('namespace'), '-disk').vhd"
+                },
+                "caching": "ReadWrite",
+                "diskSizeGB": 30
+            },
+            "dataDisks": []
+        },
+        "osProfile": {
+            "computerName": "grafana-vm",
+            "adminUsername": "rootuser",
+            "linuxConfiguration": {
+                "disablePasswordAuthentication": false
+            },
+            "secrets": []
+        },
+        "networkProfile": {
+            "networkInterfaces": [
+                {
+                    "id": "/subscriptions/9e7e6198-d425-4369-9283-14afde79747c/resourceGroups/grafanatestvm1/providers/Microsoft.Network/networkInterfaces/grafana-nic"
+                }
+            ]
+        },
+        "provisioningState": "Succeeded"
+    },
+    "resources": [
+        {
+            "name": "installGrafana",
+            "id": "/subscriptions/9e7e6198-d425-4369-9283-14afde79747c/resourceGroups/grafanatestvm1/providers/Microsoft.Compute/virtualMachines/grafana/extensions/installGrafana",
+            "type": "Microsoft.Compute/virtualMachines/extensions",
+            "location": "eastus",
+            "properties": {
+                "autoUpgradeMinorVersion": true,
+                "provisioningState": "Succeeded",
+                "publisher": "Microsoft.Azure.Extensions",
+                "type": "CustomScript",
+                "typeHandlerVersion": "2.1",
+                "settings": {
+                    "fileUris": [
+                        "https://catalogartifact.azureedge.net/publicartifacts/grafana-labs.grafana_oss-d039c449-575f-4dc1-b4d0-5d23a03bc062-stable/Artifacts/scripts/install-grafana.sh"
+                    ]
+                }
+            }
+        }
+    ]
+}

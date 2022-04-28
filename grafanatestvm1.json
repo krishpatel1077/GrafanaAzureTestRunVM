@@ -1,0 +1,8 @@
+{
+    "id": "/subscriptions/9e7e6198-d425-4369-9283-14afde79747c/resourceGroups/grafanatestvm1",
+    "name": "grafanatestvm1",
+    "location": "eastus",
+    "properties": {
+        "provisioningState": "Succeeded"
+    }
+}

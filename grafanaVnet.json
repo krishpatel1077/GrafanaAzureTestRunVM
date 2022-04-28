@@ -1,0 +1,33 @@
+{
+    "name": "grafanaVnet",
+    "id": "/subscriptions/9e7e6198-d425-4369-9283-14afde79747c/resourceGroups/grafanatestvm1/providers/Microsoft.Network/virtualNetworks/grafanaVnet",
+    "etag": "W/\"c56a527d-bf95-40d7-834c-48b127b10a19\"",
+    "type": "Microsoft.Network/virtualNetworks",
+    "location": "eastus",
+    "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "f36b956b-b4fc-45dd-aa08-4e52125d8d16",
+        "addressSpace": {
+            "addressPrefixes": [
+                "10.0.0.0/16"
+            ]
+        },
+        "subnets": [
+            {
+                "name": "grafanaSubnet",
+                "id": "/subscriptions/9e7e6198-d425-4369-9283-14afde79747c/resourceGroups/grafanatestvm1/providers/Microsoft.Network/virtualNetworks/grafanaVnet/subnets/grafanaSubnet",
+                "etag": "W/\"c56a527d-bf95-40d7-834c-48b127b10a19\"",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "addressPrefix": "10.0.0.0/24",
+                    "ipConfigurations": [
+                        {
+                            "id": "/subscriptions/9e7e6198-d425-4369-9283-14afde79747c/resourceGroups/grafanatestvm1/providers/Microsoft.Network/networkInterfaces/grafana-nic/ipConfigurations/grafana-ip-config"
+                        }
+                    ]
+                },
+                "type": "Microsoft.Network/virtualNetworks/subnets"
+            }
+        ]
+    }
+}

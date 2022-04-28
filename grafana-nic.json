@@ -1,0 +1,49 @@
+{
+    "name": "grafana-nic",
+    "id": "/subscriptions/9e7e6198-d425-4369-9283-14afde79747c/resourceGroups/grafanatestvm1/providers/Microsoft.Network/networkInterfaces/grafana-nic",
+    "etag": "W/\"92cdd874-bced-43c4-8a63-d68112681762\"",
+    "location": "eastus",
+    "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "01e96514-8499-4e7f-a39d-86654814c498",
+        "ipConfigurations": [
+            {
+                "name": "grafana-ip-config",
+                "id": "/subscriptions/9e7e6198-d425-4369-9283-14afde79747c/resourceGroups/grafanatestvm1/providers/Microsoft.Network/networkInterfaces/grafana-nic/ipConfigurations/grafana-ip-config",
+                "etag": "W/\"92cdd874-bced-43c4-8a63-d68112681762\"",
+                "type": "Microsoft.Network/networkInterfaces/ipConfigurations",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "privateIPAddress": "10.0.0.4",
+                    "privateIPAllocationMethod": "Dynamic",
+                    "publicIPAddress": {
+                        "id": "/subscriptions/9e7e6198-d425-4369-9283-14afde79747c/resourceGroups/grafanatestvm1/providers/Microsoft.Network/publicIPAddresses/grafanaIP"
+                    },
+                    "subnet": {
+                        "id": "/subscriptions/9e7e6198-d425-4369-9283-14afde79747c/resourceGroups/grafanatestvm1/providers/Microsoft.Network/virtualNetworks/grafanaVnet/subnets/grafanaSubnet"
+                    },
+                    "primary": true,
+                    "privateIPAddressVersion": "IPv4"
+                }
+            }
+        ],
+        "dnsSettings": {
+            "dnsServers": [],
+            "appliedDnsServers": [],
+            "internalDomainNameSuffix": "nokwx252wtoulkqijzjbexmncg.bx.internal.cloudapp.net"
+        },
+        "macAddress": "00-22-48-1D-2B-5C",
+        "enableAcceleratedNetworking": false,
+        "vnetEncryptionSupported": false,
+        "enableIPForwarding": false,
+        "primary": true,
+        "virtualMachine": {
+            "id": "/subscriptions/9e7e6198-d425-4369-9283-14afde79747c/resourceGroups/grafanatestvm1/providers/Microsoft.Compute/virtualMachines/grafana"
+        },
+        "hostedWorkloads": [],
+        "tapConfigurations": [],
+        "nicType": "Standard"
+    },
+    "type": "Microsoft.Network/networkInterfaces",
+    "kind": "Regular"
+}

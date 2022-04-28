@@ -1,0 +1,26 @@
+{
+    "name": "grafanaIP",
+    "id": "/subscriptions/9e7e6198-d425-4369-9283-14afde79747c/resourceGroups/grafanatestvm1/providers/Microsoft.Network/publicIPAddresses/grafanaIP",
+    "etag": "W/\"5cd28399-4cce-4a4d-8aa8-6d62edd5b1c5\"",
+    "location": "eastus",
+    "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "8af282c3-5fd0-46e8-8c87-8feeda255751",
+        "ipAddress": "20.228.195.35",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 4,
+        "dnsSettings": {
+            "domainNameLabel": "grafanatestrun1",
+            "fqdn": "grafanatestrun1.eastus.cloudapp.azure.com"
+        },
+        "ipTags": [],
+        "ipConfiguration": {
+            "id": "/subscriptions/9e7e6198-d425-4369-9283-14afde79747c/resourceGroups/grafanatestvm1/providers/Microsoft.Network/networkInterfaces/grafana-nic/ipConfigurations/grafana-ip-config"
+        }
+    },
+    "type": "Microsoft.Network/publicIPAddresses",
+    "sku": {
+        "name": "Basic"
+    }
+}
