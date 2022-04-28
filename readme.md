@@ -16,3 +16,7 @@ grafanaIP.json: "/subscriptions/9e7e6198-d425-4369-9283-14afde79747c/resourceGro
 --FILE USED FOR THE PUBLIC IP THE GRAFANA SERVER IS RAN ON
 grafanaVnet.json: "/subscriptions/9e7e6198-d425-4369-9283-14afde79747c/resourceGroups/grafanatestvm1/providers/Microsoft.Network/virtualNetworks/grafanaVnet"
 --FILE USED FOR THE VIRTUAL NETWORK THAT RUNS THE ENTIRE STRUCTURE
+
+
+SCREENSHOTS:
+![image](https://user-images.githubusercontent.com/40529069/165784447-c5951e6f-25b5-41ce-baae-41c37d847e32.png)
