@@ -24,4 +24,5 @@ All files are from the resource group "grafanatestvm1"
 
 SCREENSHOTS:
 ![image](https://user-images.githubusercontent.com/40529069/165784447-c5951e6f-25b5-41ce-baae-41c37d847e32.png)
+![image](https://user-images.githubusercontent.com/40529069/165784978-1c5c58ea-eca1-4daf-a1d0-52389b860cbb.png)
 ![image](https://user-images.githubusercontent.com/40529069/165784570-429eb4d7-8a07-489b-810b-1e8533b246e4.png)
