@@ -6,8 +6,8 @@ All files are from the resource group "grafanatestvm1"
 
 **Purpose:** Run a VM using Azure Marketplace's Grafana Module and display the metrics from Azure Monitor via Grafana Visualization
 
-**Relevant ID's TAGS:
-**
+**Relevant ID's TAGS:**
+
 **grafanatestvm1.json:** "/subscriptions/9e7e6198-d425-4369-9283-14afde79747c/resourceGroups/grafanatestvm1"
 --FILE USED TO CREATE THE ENTIRE RESOURCE GROUP "grafanatestvm1"
 **grafana.json:** "/subscriptions/9e7e6198-d425-4369-9283-14afde79747c/resourceGroups/grafanatestvm1/providers/Microsoft.Compute/virtualMachines/grafana"
